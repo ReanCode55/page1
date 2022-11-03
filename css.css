@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+header,
+.bg-sub-menu,
+.sub-menu,
+.blog-1 .title,
+.blog-2 .title,
+.text-footer{
+    background-color: #11334f;
+}
+.bg-sub-menu{
+    width: 840px;
+}
+.sub-menu{
+    opacity: 0;
+    visibility: hidden;
+    top: 200%;
+    transition: all 0.3s;
+}
+.drop-menu:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+.blog .main-box .left{
+    width: 70%;
+}
+.blog .main-box .left .blog-1 .box-product .box .images img{
+    transition: transform 0.3s;
+}
+.blog .main-box .left .blog-1 .box-product .box .images img:hover{
+    transform: scale(1.05);
+}
+.blog .main-box .left .blog-1 .des{
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 1; /* number of lines to show */
+           line-clamp: 1; 
+   -webkit-box-orient: vertical;
+}
+.blog .main-box .right{
+    width: 30%;
+}
+.blog .main-box .right .blog-2 .box{
+    transition: transform 0.3s;
+}
+.blog .main-box .right .blog-2 .box:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
